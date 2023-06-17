@@ -1,0 +1,14 @@
+CREATE TABLE EMPLOYEE (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  address TEXT NOT NULL
+);
+
+  INSERT INTO EMPLOYEE VALUES (0001, 'Дмитрий', '46', 'Волгоград');
+  INSERT INTO EMPLOYEE VALUES (0002, 'Артём', '22', 'Ярославль');
+  INSERT INTO EMPLOYEE VALUES (0003, 'Анна', '35', 'Вологда');
+  INSERT INTO EMPLOYEE VALUES (0004, 'Полина', '26', 'Москва');
+  INSERT INTO EMPLOYEE VALUES (0005, 'Никита', '36', 'Архангельск');
+
+SELECT * FROM EMPLOYEE ;
