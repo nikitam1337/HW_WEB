@@ -15,6 +15,29 @@
   </head>
 <body class="w3-light-grey">
 
+<?php
+  $name = "Nikita";
+  $profi = "Razrab";
+  $citi = "Vologda, Russia";
+  $email = "nikitam.l@mail.ru";
+  $phone = 88005553535;
+  $age_year = 2023 - 1997;
+  $age_days = (2023-1997)*365;
+
+  $skill_name = ['Adobe Photoshop', 'Photography', 'Illustrator', 'Media' ];
+  $skill_level = [95, 80, 75, 66];
+
+  # Домашнее задание к семинару №4
+  $job = [
+    'job_name' => ['ТЕПЛОЭНЕРГОСТРОЙ', 'Инженерные системы', 'Чикибамбони'],
+    'job_data' => ['2023 - настоящее время', '2021-2023', '2019-2019'],
+    'job_desc' => ['Инженер-проектировщик', 'Инженер-проектировщик', 'Оффициант']
+    ]
+
+
+?>
+
+
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -28,20 +51,7 @@
         <div class="w3-display-container">
           <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <?php
-              $name = "Nikita";
-              $profi = "Razrab";
-              $citi = "Vologda, Russia";
-              $email = "nikitam.l@mail.ru";
-              $phone = 88005553535;
-              $age_year = 2023 - 1997;
-              $age_days = (2023-1997)*365;
 
-              $skill_name = ['Adobe Photoshop', 'Photography', 'Illustrator', 'Media' ];
-              $skill_level = [95, 80, 75, 66]
-
-            ?>
-    
             <h2>
             <?php
               echo $name;
@@ -107,21 +117,21 @@
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b><?php echo $job['job_name'][0]; ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['job_data'][0]; ?></h6>
+          <p><?php echo $job['job_desc'][0]; ?></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <h5 class="w3-opacity"><b><?php echo $job['job_name'][1]; ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['job_data'][1]; ?></h6>
+          <p><?php echo $job['job_desc'][1]; ?></p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <h5 class="w3-opacity"><b><?php echo $job['job_name'][2]; ?></b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['job_data'][2]; ?></h6>
+          <p><?php echo $job['job_desc'][3]; ?></p><br>
         </div>
       </div>
 
